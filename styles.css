@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
+.loading-bar {
+  width: 60%;
+  height: 30px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loading-bar-inner {
+  height: 100%;
+  width: 0%;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: width 0.5s ease-out;
+}
+
+/* Main content styles */
+h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #4caf50;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+/* Animal cursors using PNG images */
+.box.pig:hover {
+  cursor: url('https://img.icons8.com/ios/50/pig.png'), auto;
+}
+
+.box.cat:hover {
+  cursor: url('https://img.icons8.com/ios/50/cat.png'), auto;
+}
+
+.box.cow:hover {
+  cursor: url('https://img.icons8.com/ios/50/cow.png'), auto;
+}
+
+.box.sheep:hover {
+  cursor: url('https://img.icons8.com/ios/50/sheep.png'), auto;
+}
+
+.box.chicken:hover {
+  cursor: url('https://img.icons8.com/windows/32/chicken.png'), auto;
+}
